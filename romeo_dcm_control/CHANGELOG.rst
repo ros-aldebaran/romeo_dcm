@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.5 (2016-07-08)
+------------------
 * adding config for Gazebo: Gazebo xacro files and full list of controllers
 * 0.1.4
 * update changelog

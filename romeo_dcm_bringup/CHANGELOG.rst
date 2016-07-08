@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.5 (2016-07-08)
+------------------
 * 0.1.4
 * update changelog
 * fixed packages.xml
