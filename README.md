@@ -12,7 +12,7 @@ Suppose that you alreadly have a ros workspace and know how to compile a ros pac
 I.2 To run romeo_dcm and romeo_moveit:
 --------------------------------------
 
-First, set NAO_IP to your Romeo's ip.
+First, set NAO_IP to your Romeo's IP in romeo_dcm_bringup/config/romeo_dcm.yaml
 
 ``
 roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch
