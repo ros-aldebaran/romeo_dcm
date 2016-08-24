@@ -51,9 +51,5 @@ else()
     message(STATUS "Cannot find NAOqi C++ sdk; C++ nodes will NOT be built")
 endif()
 
-
-# install(DIRECTORY launch 
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
-
 install(DIRECTORY config
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
