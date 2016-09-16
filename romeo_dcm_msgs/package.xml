@@ -22,15 +22,15 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISE
   <name>romeo_dcm_msgs</name>
   <version>0.1.5</version>
   <description>
-    Message, service and action declarations for Aldebaran's ROMEO
+    Message, service and action declarations for ROMEO robot
   </description>
   
   <maintainer email="hris2003@gmail.com">Ha Dang</maintainer>
 
   <license>BSD</license>
 
-  <url type="repository">https://github.com/ros-aldebaran/romeo_robot</url>
-  <url type="bugtracker">https://github.com/ros-aldebaran/romeo_robot/issues</url>
+  <url type="repository">https://github.com/ros-aldebaran/romeo_dcm_robot</url>
+  <url type="bugtracker">https://github.com/ros-aldebaran/romeo_dcm_robot/issues</url>
 
   <author email="costashatz@gmail.com">Konstantinos Chatzilygeroudis</author>
   <author email="hris2003@gmail.com">Ha Dang</author>
