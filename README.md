@@ -9,9 +9,7 @@ I.1 Compile the package
 
 - install dependencies
 
-        sudo apt-get install ros-indigo-romeo-robot ros-indigo-romeo-control
-
-- clone and compile [naoqi_dcm_driver] (https://github.com/ros-aldebaran/naoqi_dcm_driver>)
+        sudo apt-get install ros-indigo-romeo-robot ros-indigo-romeo-control ros-indigo-naoqi-dcm-driver
 
 - then, clone the code from [romeo_dcm_bringup] (http://wiki.ros.org/romeo_dcm_bringup>) and compile
 
