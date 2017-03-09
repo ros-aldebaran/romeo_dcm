@@ -11,10 +11,13 @@ I.1 Compile the package
 
         sudo apt-get install ros-indigo-romeo-robot ros-indigo-romeo-control ros-indigo-naoqi-dcm-driver
 
-- then, clone the code from [romeo_dcm_bringup] (http://wiki.ros.org/romeo_dcm_bringup>) and compile
+- then, install [romeo_dcm_bringup] (http://wiki.ros.org/romeo_dcm_bringup>) or compile it from source
+
+        sudo apt-get install ros-indigo-romeo-dcm-bringup
 
 - optionally, install [romeo_moveit_config] (http://wiki.ros.org/romeo_moveit_config>)
 
+        sudo apt-get install ros-indigo-romeo-moveit-config
 
 I.2 To run romeo_dcm_bringup with Moveit!:
 ------------------------------------------
