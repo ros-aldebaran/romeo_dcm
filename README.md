@@ -1,58 +1,43 @@
-README to use romeo_moveit to control your Romeo
-================================================
+romeo_dcm_robot
+===============
 
-I. TO USE FROM A REMOTE COMPUTER:
-=================================
+DCM stack integrating tools to control Romeo robot
 
-I.1 Compile the package
------------------------
+Installation
+------------
 
 - install dependencies
 
         sudo apt-get install ros-indigo-romeo-robot ros-indigo-romeo-control ros-indigo-naoqi-dcm-driver
 
-- then, install [romeo_dcm_bringup] (http://wiki.ros.org/romeo_dcm_bringup>) or compile it from source
+- then, install [romeo_dcm_bringup](http://wiki.ros.org/romeo_dcm_bringup) or compile it from source
 
         sudo apt-get install ros-indigo-romeo-dcm-bringup
 
-- optionally, install [romeo_moveit_config] (http://wiki.ros.org/romeo_moveit_config>)
+- optionally, install [romeo_moveit_config](http://wiki.ros.org/romeo_moveit_config)
 
         sudo apt-get install ros-indigo-romeo-moveit-config
 
-I.2 To run romeo_dcm_bringup with Moveit!:
-------------------------------------------
+How to use it 
+--------------
 
-- first, export NAO_IP or set it in romeo_dcm_bringup/config/romeo_dcm.yaml (in old version)
+To command your robot remotely with ros control :
 
-``
-export NAO_IP=<your_robot_ip>
-``
+- start the DCM Bringup providing the robot's IP
 
-- then, start the DCM bringup
-
-``
-roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch
-``
+        roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch robot_ip:=<ROBOT_IP>
 
 - Wait until romeo_dcm_bringup node is ready, then start MoveIt! and control the robot:
 
-``
-roslaunch romeo_moveit_config moveit_planner.launch
-``
+        roslaunch romeo_moveit_config moveit_planner.launch
 
 - or you can send a trajectory to the desired controller (actionlib)
 
-``
-rosrun actionlib axclient.py <name of the goal topic of the action server>
-``
+        rosrun actionlib axclient.py <name of the goal topic of the action server>
 
-``
 example:
-``
 
-``
-rosrun actionlib axclient.py /romeo_dcm/LeftArm_controller/follow_joint_trajectory/goal
-``
+        rosrun actionlib axclient.py /romeo_dcm/LeftArm_controller/follow_joint_trajectory/goal
 
 To choose the controllers you want to load at launchtime you have to modify romeo_control/launch/romeo_control_traject$
 To know the list of controllers implemented please refer to : romeo_control/config/romeo_trajectory_control.yaml
