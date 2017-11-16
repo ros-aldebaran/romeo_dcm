@@ -6,10 +6,10 @@
  	<include file="$(find romeo_description)/launch/romeo_desc_generated.launch" /> 
 
 	<!-- Call Romeo Robot Trajectory Controller -->
-	<include file="$(find romeo_control)/launch/romeo_dcm_position_control.launch"/>
+	<include file="$(find romeo_control)/launch/romeo_position_control.launch"/>
 
  	<!-- Call Romeo Robot Driver -->
- 	<node pkg="romeo_dcm_driver" type="romeo_dcm_driver" name="romeo_dcm_driver" respawn="false" output="screen" >
+        <node pkg="naoqi_dcm_driver" type="naoqi_dcm_driver" name="naoqi_dcm_driver" respawn="false" output="screen" >
     		<!-- Load configurations from YAML file to parameter server -->
     		<rosparam file="$(find romeo_dcm_bringup)/config/romeo_dcm.yaml" command="load"/>
  	</node>
